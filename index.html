@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get everything about a Minehut Server that you wouldn't normally find!">
+    <link rel="stylesheet" href="style.css">
+    <title>Minehut Tracker</title>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Minehut Tracker</h1>
+        <p>What's the next hut you wanna know?</p>
+        <input type="text" class="minehut-server" id="minehut-server" required aria-required="true"><br><br>
+        <button type="button" id="submit">Get the Info</button>
+    </div>
+    <div id="checkanotherserver" style="display: none;">
+        <button type="button" id="refresh">Check another server?</button>
+    </div>
+    <h2 id="name" style="display: none;"></h2>
+    <div id="data1" style="display: none;">
+        <p>Online?</p>
+        <span id="online"></span>
+    </div>
+    <div id="data2" style="display: none;">
+        <p>MOTD</p>
+        <span id="motd"></span>
+    </div>
+    <div id="data3" style="display: none;">
+        <p>Server Type</p>
+        <span id="server-type"></span>
+    </div>
+    <div id="data4" style="display: none;">
+        <p>Visibility</p>
+        <span id="visibility"></span>
+    </div>
+    <div id="data5" style="display: none;">
+        <p>Server Plan</p>
+        <span id="server-plan"></span>
+    </div>
+    <div id="data6" style="display: none;">
+        <p>Player Count</p>
+        <span id="playerCount"></span>
+    </div>
+    <div id="data7" style="display: none;">
+        <p>Creation Date</p>
+        <span id="creationdate"></span>
+    </div>
+    <div id="data8" style="display: none;">
+        <p>Creation Timestamp</p>
+        <span id="creation"></span>
+    </div>
+    <div id="data9" style="display: none;">
+        <p>Storage Node</p>
+        <span id="storage-node"></span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
